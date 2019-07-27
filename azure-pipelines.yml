@@ -13,6 +13,6 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: docker build -t $(dockerId)/$(imageName) .  # add options to this command to meet your needs
+- script: docker build -t $(imageName) .  # add options to this command to meet your needs
   displayName: 'docker build id $(dockerId) and name $(imageName)'
  
