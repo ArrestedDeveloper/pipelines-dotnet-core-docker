@@ -12,6 +12,8 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- script: docker pull $(imageTag):latest  # add options to this command to meet your needs
+- script: docker pull $(imageTag1):latest  # add options to this command to meet your needs
+- script: docker pull $(imageTag2):latest  # add options to this command to meet your needs
+- script: docker pull $(imageTag3):latest  # add options to this command to meet your needs
   displayName: 'docker build id $(dockerId) and name $(imageName)'
  
